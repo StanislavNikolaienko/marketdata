@@ -8,5 +8,5 @@ config = AutoConfig(search_path=BASE_DIR.joinpath(CONFIG_DIR))
 
 
 TELEGRAM_BOT_TOKEN = config("TELEGRAM_BOT_TOKEN")
-bot = Bot(token=TOKEN)
+bot = Bot(token=TELEGRAM_BOT_TOKEN)
 dp = Dispatcher(bot)
