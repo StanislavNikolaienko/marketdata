@@ -25,6 +25,7 @@ coverage = "^6.4.4"
 pytest-html = "^3.1.1"
 pytest-cov = "^3.0.0"
 black = "^22.8.0"
+finnhub-python = "^2.4.14"
 
 [tool.black]
 # https://github.com/psf/black
