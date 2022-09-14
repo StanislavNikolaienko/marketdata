@@ -253,7 +253,7 @@ testing = ["covdefaults (>=2.2)", "coverage (>=6.4.2)", "pytest (>=7.1.2)", "pyt
 name = "finnhub-python"
 version = "2.4.14"
 description = "Finnhub API"
-category = "dev"
+category = "main"
 optional = false
 python-versions = "*"
 
@@ -611,7 +611,7 @@ python-versions = ">=3.6"
 name = "requests"
 version = "2.28.1"
 description = "Python HTTP for Humans."
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=3.7, <4"
 
@@ -748,7 +748,7 @@ python-versions = ">=3.7"
 name = "urllib3"
 version = "1.26.12"
 description = "HTTP library with thread-safe connection pooling, file post, and more."
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, !=3.5.*, <4"
 
@@ -797,7 +797,7 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "ce49972c2e8af3378947b4fb174c0e5b4ac965f35e10b7bbee3ec6c8d13fdcb8"
+content-hash = "62f36588893685528437cca64d186fc526e34365cd2cb0316d26ed90032aaecd"
 
 [metadata.files]
 aiogram = [
