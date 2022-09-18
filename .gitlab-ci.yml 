@@ -1,0 +1,28 @@
+---
+
+image: python:3.9
+
+variables:
+  PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+
+before_script:
+  - python -m venv venv
+  - source venv/bin/activate
+  - make poetry-download
+  - export PATH="/root/.local/bin:$PATH"
+
+cache:
+  paths:
+    - .cache/pip
+    - venv/
+
+stages:
+    - check-codestyle
+
+codestyle:
+    stage: check-codestyle
+    script:
+      - poetry install
+      - make check-codestyle
+    tags:
+      - shared
