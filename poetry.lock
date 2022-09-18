@@ -325,6 +325,9 @@ category = "dev"
 optional = false
 python-versions = ">=3.6.1,<4.0"
 
+[package.dependencies]
+colorama = {version = ">=0.4.3,<0.5.0", optional = true, markers = "extra == \"colors\""}
+
 [package.extras]
 colors = ["colorama (>=0.4.3,<0.5.0)"]
 pipfile_deprecated_finder = ["pipreqs", "requirementslib"]
@@ -797,7 +800,7 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "62f36588893685528437cca64d186fc526e34365cd2cb0316d26ed90032aaecd"
+content-hash = "4bd4ec24c3ec5a83528e02aa17269b6693e9cd3445f12c94eeb417639db04532"
 
 [metadata.files]
 aiogram = [
