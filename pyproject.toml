@@ -52,7 +52,7 @@ exclude = '''
 [tool.isort]
 # https://github.com/timothycrosley/isort/
 skip= ['bot.py']
-skip_glob = ["**/.env*", "**/env/*", "**/.venv/*", "**/docs/*"]
+skip_glob = ["**/.venv/*"]
 py_version = 310
 line_length = 88
 known_typing = ["typing", "types", "typing_extensions", "mypy", "mypy_extensions"]
