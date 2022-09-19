@@ -62,6 +62,23 @@ multi_line_output = 3
 indent = 4
 color_output = true
 
+exclude = '''
+/(
+    \.git
+    | \.hg
+    | \.mypy_cache
+    | \.tox
+    | \.venv
+    | _build
+    | buck-out
+    | build
+    | dist
+    | env
+    | venv
+)/
+'''
+
+
 
 [build-system]
 
