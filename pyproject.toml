@@ -51,7 +51,7 @@ exclude = '''
 
 [tool.isort]
 # https://github.com/timothycrosley/isort/
-skip= ['bot.py']
+skip= ['bot.py','| venv']
 py_version = 310
 line_length = 88
 known_typing = ["typing", "types", "typing_extensions", "mypy", "mypy_extensions"]
@@ -61,22 +61,6 @@ profile = "black"
 multi_line_output = 3
 indent = 4
 color_output = true
-
-exclude = '''
-/(
-    \.git
-    | \.hg
-    | \.mypy_cache
-    | \.tox
-    | \.venv
-    | _build
-    | buck-out
-    | build
-    | dist
-    | env
-    | venv
-)/
-'''
 
 
 
