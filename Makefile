@@ -44,7 +44,6 @@ test:
 
 .PHONY: check-codestyle
 check-codestyle:
-	poetry run isort --diff --check-only --settings-path pyproject.toml ./
 	poetry run black --diff --check --config pyproject.toml ./
 	poetry run darglint --docstring-style sphinx --verbosity 2 tradernet_api tests
 
