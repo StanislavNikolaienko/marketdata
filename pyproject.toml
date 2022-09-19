@@ -15,7 +15,7 @@ finnhub-python = "^2.4.14"
 pytest = "^7.1.3"
 bandit = "^1.7.4"
 darglint = "^1.8.1"
-isort = "^5.10.1"
+isort = {extras = ["colors"], version = "^5.10.1"}
 mypy = "^0.971"
 pre-commit = "^2.20.0"
 pydocstyle = "^6.1.1"
@@ -52,6 +52,7 @@ exclude = '''
 [tool.isort]
 # https://github.com/timothycrosley/isort/
 skip= ['bot.py']
+skip_glob = [" **/venv/*"]
 py_version = 310
 line_length = 88
 known_typing = ["typing", "types", "typing_extensions", "mypy", "mypy_extensions"]
@@ -61,6 +62,7 @@ profile = "black"
 multi_line_output = 3
 indent = 4
 color_output = true
+
 
 
 [build-system]
