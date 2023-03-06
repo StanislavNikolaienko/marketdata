@@ -17,12 +17,4 @@ cache:
     - venv/
 
 stages:
-    - check-codestyle
-
-codestyle:
-    stage: check-codestyle
-    script:
-      - poetry install
-      - make check-codestyle
-    tags:
-      - shared
+    - deploy
