@@ -16,5 +16,6 @@ cache:
     - .cache/pip
     - venv/
 
-stages:
-    - deploy
+test:
+  script:
+    - make test
