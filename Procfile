@@ -1,1 +1,1 @@
-worker: python marketdata_bot/bot.py
+web: python marketdata_bot/bot.py
