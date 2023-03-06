@@ -16,6 +16,12 @@ cache:
     - .cache/pip
     - venv/
 
-test:
-  script:
-    - make test
+stages:
+    - check-codestyle
+
+codestyle:
+    stage: check-codestyle
+    script:
+      - poetry install
+    tags:
+      - shared
